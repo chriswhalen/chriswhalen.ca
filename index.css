@@ -1,0 +1,39 @@
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+body {
+    font-family: Heebo, sans-serif;
+}
+
+ul li {
+    list-style: square;
+    margin-left: 1em;
+}
+
+.hero .button {
+    font-weight: 800;
+    line-height: 1em;
+    margin: 1.5em 0;
+    padding: 1.5em 1em;
+}
+
+.hero .box {
+    padding: 2em 1.5em;
+}
+
+.hero .box .title {
+    margin: 0.5em;
+}
+
+.card {
+    margin: 2em 0;
+}
+
+.is-zoomed {
+    zoom: 4;
+}
+
+.content {
+    line-height: 1.33em;
+}

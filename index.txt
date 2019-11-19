@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>The Perfect Product</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Heebo:300,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+    <section class="hero is-link">
+        <div class="hero-body"><div class="container"><div class="columns">
+
+            <div class="column">
+                <h1 class="title is-size-1">The Perfect Product</h1><br>
+                <h2 class="subtitle is-size-3">This is the perfect product template -- it has all of the features you're ever going to need!</h2>
+                <ul>
+                    <li><h3 class="subtitle is-size-3">The first feature</h3></li>
+                    <li><h3 class="subtitle is-size-3">The second one</h3></li>
+                    <li><h3 class="subtitle is-size-3">And even more!</h3></li>
+                </ul>
+                <br>
+                <div class="has-text-centered">
+                    <a class="button large is-size-3 is-danger">ADD TO CART NOW<br>$99.99</a>
+                </div>
+            </div>
+
+            <div class="column">
+                <iframe style="width:100%; height:540px" src="https://www.youtube.com/embed/mZvMfIF8PFw?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+        </div></div></div>
+    </section>
+
+    <section class="container">
+        <div class="columns">
+            <div class="column"><div class="card">
+                <div class="card-image">
+                    <figure><img src="https://source.unsplash.com/800x800/?man,smile"></figure>
+                </div>
+                <div class="card-content">
+                    <div class="media"><div class="media-content">
+                        <p class="title is-4">John Smith</p>
+                        <p class="subtitle is-5">
+                            <a class="has-text-success">@johnsmith</a><br>
+                            CEO, ACME Industries
+                        </p>
+                    </div></div>
+                    <div class="content is-size-4">
+                        Definitely the best product out there! I've spent my entire life waiting for just this very thing.
+                        I had given up hope entirely but now here it is! <a>#finally</a>
+                    </div>
+                </div>
+            </div></div>
+            <div class="column"><div class="card">
+                <div class="card-image">
+                    <figure><img src="https://source.unsplash.com/800x800/?woman,smile"></figure>
+                </div>
+                <div class="card-content">
+                    <div class="media"><div class="media-content">
+                        <p class="title is-4">Jane Jones</p>
+                        <p class="subtitle is-5">
+                            <a class="has-text-success">@janejones</a><br>
+                            Owner, Best Products Blog
+                        </p>
+                    </div></div>
+                    <div class="content is-size-4">
+                        Doesn't get any better than this! Once you get this one, you'll never need another one again.
+                        Just perfect in every way imaginable -- you won't even believe your eyes. Am I dreaming? <a>#pinchme</a>
+                    </div>
+                </div>
+            </div></div>
+            <div class="column"><div class="card">
+                <div class="card-image">
+                    <figure><img src="https://source.unsplash.com/800x800/?man,glasses"></figure>
+                </div>
+                <div class="card-content">
+                    <div class="media"><div class="media-content">
+                        <p class="title is-4">Joe Norman</p>
+                        <p class="subtitle is-5">
+                            <a class="has-text-success">@joenorman</a><br>
+                            Long-time Loyal Customer
+                        </p>
+                    </div></div>
+                    <div class="content is-size-4">
+                        How do they keep doing it? Just amazing, all of it -- here, in one place, for the first time.
+                        If everybody did it this way, everything would just be better.
+                        The price is extraordinary; the value, sublime -- why wait any longer? <a>#justbuyitalready</a>
+                    </div>
+                </div>
+            </div></div>
+        </div>
+    </section>
+
+    <section class="hero is-warning">
+        <div class="hero-body"><div class="container">
+
+            <div class="has-text-centered">
+                <h1 class="title is-1">What makes this the perfect product?</h1>
+                <p><a class="button large is-size-3 is-danger">ADD TO CART NOW<br>$99.99</a></p>
+            </div>
+
+            <div class="columns is-desktop">
+
+                <div class="column"><div class="box">
+                    <div class="has-text-centered">
+                        <span class="icon is-large"><i class="fas fa-comment-dollar has-text-success is-zoomed"></i></span>
+                        <h2 class="title is-4 has-text-dark">VALUE</h2>
+                        <hr>
+                        <div class="content is-size-5">
+                            Product value is key; our product designers spare no expense to develop the perfect experience.
+                            Once you get started, you'll understand exactly what we mean.
+                        </div>
+                    </div>
+                </div></div>
+
+                <div class="column"><div class="box">
+                    <div class="has-text-centered">
+                        <span class="icon is-large"><i class="fas fa-handshake has-text-success is-zoomed"></i></span>
+                        <h2 class="title is-4 has-text-dark">CONVERSION</h2>
+                        <hr>
+                        <div class="content is-size-5">
+                            Conversions mean dollars in your pocket. Never miss another opportunity!
+                            Our proven strategies ensure you make it happen on time, every time.
+                        </div>
+                    </div>
+                </div></div>
+
+                <div class="column"><div class="box">
+                    <div class="has-text-centered">
+                        <span class="icon is-large"><i class="fas fa-chart-line has-text-success is-zoomed"></i></span>
+                        <h2 class="title is-4 has-text-dark">ANALYTICS</h2>
+                        <hr>
+                        <div class="content is-size-5">
+                            Insight provides the power to make informed decisions.
+                            Your competition is already leveraging the power of analytics; take back the edge!
+                        </div>
+                    </div>
+                </div></div>
+
+                <div class="column"><div class="box">
+                    <div class="has-text-centered">
+                        <span class="icon is-large"><i class="fas fa-people-carry has-text-success is-zoomed"></i></span>
+                        <h2 class="title is-4 has-text-dark">SERVICE</h2>
+                        <hr>
+                        <div class="content is-size-5">
+                            The best products are always backed by the best service, and we're no exception.
+                            Enjoy best-in-class service with each and every purchase.
+                        </div>
+                    </div>
+                </div></div>
+
+        </div></div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-body"><div class="container">
+
+            <div class="has-text-centered">
+                <h1 class="title is-1">I'm not sure if this product is for me...</h1>
+                <h2 class="subtitle is-4">It's normal to have questions about any serious decision you intend to make.</h2>
+            </div>
+            <hr>
+            <div class="columns">
+
+                <div class="column">
+                    <div class="content">
+                        <br>
+                        <h1 class="is-size-5 has-text-weight-bold">What if I don't like it?</h1>
+                        <p class="is-size-6">We offer a 30-day money-back guarantee on every purchase.</p>
+                    </div>
+                    <div class="content">
+                        <br>
+                        <h1 class="is-size-5 has-text-weight-bold">How do I know it's real?</h1>
+                        <p class="is-size-6">Ask our customers -- they keep coming back every time.</p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="content">
+                        <br>
+                        <h1 class="is-size-5 has-text-weight-bold">What happens when I pay?</h1>
+                        <p class="is-size-6">We will send you your very own product within 24 hours.</p>
+                    </div>
+                    <div class="content">
+                        <br>
+                        <h1 class="is-size-5 has-text-weight-bold">How do I learn more?</h1>
+                        <p class="is-size-6"><a>Email</a>, <a>call</a>, or <a>post</a> us.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div></div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-body"><div class="container">
+
+            <div class="has-text-centered">
+                <h1 class="title is-1">If you're still undecided by this point, watch this:</h1>
+            </div>
+
+            <iframe style="width:100%; height:720px; margin:2em 0" src="https://www.youtube.com/embed/HhoATZ1Imtw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <div class="has-text-centered">
+                <h1 class="title is-1">That was pretty cool, right?</h1>
+            </div>
+
+            <div class="has-text-centered">
+                <a class="button large is-size-3 is-danger">ADD TO CART NOW<br>$99.99</a>
+            </div>
+
+        </div></div>
+    </section>
+
+    <section class="hero is-dark">
+        <div class="hero-body"><div class="container">
+            <div class="has-text-centered is-size-5">
+                <p>&copy; 2019 The Perfect Product</p>
+                <p><a class="has-text-primary">Privacy Policy</a></p>
+
+            </div>
+        </div></div>
+    </section>
+
+</body>
+</html>
