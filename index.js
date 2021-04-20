@@ -2,8 +2,8 @@
 let $ =(selector)=> document.querySelector(selector)
 let $$ =(selector)=> document.querySelectorAll(selector)
 
-let transformations = []
 let tilting = -1
+let transformations = []
 
 let transform =(x, y, z)=>
 {
@@ -41,12 +41,16 @@ let pan =(event)=>
 
 let tilt =(event)=>
 {
-    if (tilting < 0) tilting = 0
-    else if (tilting == 0) tilting = 1
+    tilting = (tilting + 1) % 2
 
-    transform(((Math.abs(event.alpha) + 90) % 360) / 180,
-              ((Math.abs(event.beta) + 90) % 360) / 180,
-              ((Math.abs(event.gamma) + 90) % 360) / 180)
+    let alpha = Math.abs((event.alpha-180)%90 / 180)
+    let beta = Math.abs((event.beta-90)%90 / 180)
+    let gamma = Math.abs((event.gamma-180)%90 / 180)
+
+    console.log(alpha, beta, gamma)
+
+    transform(alpha, beta, gamma)
+
 }
 
 let zoom =()=>
@@ -70,8 +74,8 @@ window.onload =()=>
     transformations[2] = $('.transform-2')
     transformations[3] = $('.transform-3')
 
-    window.addEventListener('deviceorientation', tilt)
     window.addEventListener('mousemove', pan)
+    window.addEventListener('deviceorientation', tilt)
     window.addEventListener('resize', zoom)
 }
 

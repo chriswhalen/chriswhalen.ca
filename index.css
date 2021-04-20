@@ -110,14 +110,6 @@ h2
     transition: all 0.36s ease;
 }
 
-a:hover h2
-{
-    color: #eee;
-    font-size: 64pt;
-    font-weight: 800;
-    transform: rotateZ(0) translateX(-48px) translateY(40px);
-}
-
 a
 {
     color: #ddd;
@@ -150,7 +142,14 @@ a h2
 
 a:hover { animation-name: bounce; }
 
-a:hover h2 { animation-name: bounce-too; }
+a:hover h2
+{
+    animation-name: bounce-too;
+    color: #eee;
+    font-size: 64pt;
+    font-weight: 800;
+    transform: rotateZ(0) translateX(-48px) translateY(40px);
+}
 
 a:hover img
 {
