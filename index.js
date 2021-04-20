@@ -47,9 +47,9 @@ let tilt =(event)=>
     let beta = Math.abs((event.beta-90)%90 / 180)
     let gamma = Math.abs((event.gamma-180)%90 / 180)
 
-    console.log(alpha, beta, gamma)
-
-    transform(alpha, beta, gamma)
+    transform(alpha/document.body.style.zoom,
+              beta/document.body.style.zoom,
+              gamma/document.body.style.zoom)
 
 }
 
