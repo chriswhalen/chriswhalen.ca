@@ -42,7 +42,7 @@ let pan =(event)=>
 let tilt =(event)=>
 {
     if (tilting < 0) tilting = 0
-    if (tilting == 0) tilting = 1
+    else if (tilting == 0) tilting = 1
 
     transform(((Math.abs(event.alpha) + 90) % 360) / 180,
               ((Math.abs(event.beta) + 90) % 360) / 180,
