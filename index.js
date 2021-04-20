@@ -3,6 +3,7 @@ let $ =(selector)=> document.querySelector(selector)
 let $$ =(selector)=> document.querySelectorAll(selector)
 
 let transformations = []
+let tilting = -1
 
 let transform =(x, y, z)=>
 {
@@ -30,6 +31,8 @@ let transform =(x, y, z)=>
 
 let pan =(event)=>
 {
+    if (tilting > 0) return false
+
     transform((event.clientX - (window.innerWidth / 2)) / (window.innerWidth / 2),
               (event.clientY - (window.innerHeight / 2)) / (window.innerHeight / 2),
               (event.clientX - (window.innerWidth / 2)) / (window.innerWidth / 2) +
@@ -38,6 +41,9 @@ let pan =(event)=>
 
 let tilt =(event)=>
 {
+    if (tilting < 0) tilting = 0
+    if (tilting == 0) tilting = 1
+
     transform(((Math.abs(event.alpha) + 90) % 360) / 180,
               ((Math.abs(event.beta) + 90) % 360) / 180,
               ((Math.abs(event.gamma) + 90) % 360) / 180)
