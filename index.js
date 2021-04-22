@@ -49,7 +49,7 @@ let tilt =(event)=>
 
     alpha = (alpha > 0) ? 1 - alpha : -1 - alpha
 
-    transform(alpha, beta, gamma)
+    transform(beta, alpha, gamma)
 }
 
 let zoom =()=>
