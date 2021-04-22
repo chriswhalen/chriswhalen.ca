@@ -43,9 +43,9 @@ let tilt =(event)=>
 {
     tilting++
 
-    let alpha = (event.alpha + 180) % 360
-    let beta = event.beta + 180
-    let gamma = (event.gamma + 90) * 2
+    let alpha = (event.alpha + 90) % 360
+    let beta = (event.beta + 270) % 360
+    let gamma = event.gamma + 90
 
     alpha = (alpha-180) / 180
     beta = (beta-180) / 180
