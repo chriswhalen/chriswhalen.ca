@@ -2,7 +2,7 @@
 let $ =(selector)=> document.querySelector(selector)
 let $$ =(selector)=> document.querySelectorAll(selector)
 
-let tilting = -1
+let tilting = 0
 let transformations = []
 
 let transform =(x, y, z)=>
@@ -31,36 +31,31 @@ let transform =(x, y, z)=>
 
 let pan =(event)=>
 {
-    if (tilting > 0) return false
+    if (tilting) return false
 
-    transform((event.clientX - (window.innerWidth / 2)) / (window.innerWidth / 2),
-              (event.clientY - (window.innerHeight / 2)) / (window.innerHeight / 2),
-              (event.clientX - (window.innerWidth / 2)) / (window.innerWidth / 2) +
+    transform(document.body.style.zoom * (event.clientX - (window.innerWidth / 2)) / (window.innerWidth / 2),
+              document.body.style.zoom * (event.clientY - (window.innerHeight / 2)) / (window.innerHeight / 2),
+              document.body.style.zoom * (event.clientX - (window.innerWidth / 2)) / (window.innerWidth / 2) +
               (event.clientY - (window.innerHeight / 2)) / (window.innerHeight / 2))
 }
 
 let tilt =(event)=>
 {
-    tilting = (tilting + 1) % 2
+    tilting++
 
-    let alpha = Math.abs((event.alpha+90)%180 / 90)
-    let beta = Math.abs((event.beta+90)%180 / 90)
-    let gamma = Math.abs((event.gamma-180)%180 / 90)
-
-    transform(alpha/document.body.style.zoom,
-              beta/document.body.style.zoom,
-              gamma/document.body.style.zoom)
-
+    transform(((((event.alpha**2+event.gamma**2)**0.5) / 270) - 0.5)/document.body.style.zoom,
+              (((event.beta**2+event.gamma**2)**0.5) / 270)/document.body.style.zoom,
+              ((event.gamma) / 180)/document.body.style.zoom)
 }
 
 let zoom =()=>
 {
-    document.body.style.zoom = Math.min(1,
-                                        (window.innerWidth) / 1840,
-                                        (window.innerHeight) / 960)
+    document.body.style.zoom = Math.min(1.5,
+                                        (window.innerWidth + 120) / 1920,
+                                        (window.innerHeight + 40) / 1080)
 }
 
-window.onload =()=>
+let load =()=>
 {
     $('#me img').onload =()=>
     {
@@ -78,5 +73,9 @@ window.onload =()=>
     window.addEventListener('deviceorientation', tilt)
     window.addEventListener('resize', zoom)
 }
+
+window.addEventListener('load', load)
+
+setInterval(()=>{ tilting = Math.max(0, tilting - 1) }, 64)
 
 zoom()

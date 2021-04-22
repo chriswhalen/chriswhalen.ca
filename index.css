@@ -72,7 +72,6 @@ html
     min-width: 480px;
     overflow: hidden;
     width: 100%;
-    zoom: 1;
 }
 
 body
@@ -184,8 +183,8 @@ a:hover img
 {
     background-position: center;
     mix-blend-mode: overlay;
-    pointer-events: none;
     opacity: 0.04;
+    pointer-events: none;
     z-index: 10;
 }
 
@@ -198,13 +197,12 @@ a:hover img
 
 #name
 {
-    margin-top: -240px;
+    filter: blur(0.5px);
     opacity: 0.92;
     position: absolute;
-    right: 8%;
-    top: 12%;
+    right: 12vw;
+    top: calc(-280px + 12%);
     z-index: 4;
-    filter: blur(0.5px);
 }
 
 #whalen
@@ -223,9 +221,8 @@ a:hover img
 
 #me
 {
-    bottom: -60px;
-    left: 18%;
-    margin-left: -480px;
+    bottom: calc(-40px - 2vh);
+    left: calc(-160px - 16vw + 16vh);
     opacity: 0.96;
     position: absolute;
     z-index: 2;
@@ -239,24 +236,19 @@ a:hover img
 
 #links
 {
-    bottom: 36%;
-    position: absolute;
     filter: blur(0.5px);
-    right: 48%;
+    position: absolute;
+    right: calc(320px + 32vh + 14%);
+    top: calc(600px - 16vw + 32vh);
     z-index: 8;
 }
 
-#talk
-{
-    right: -680px;
-}
-
-#talk:hover h2 { animation-name: bounce-too-talk; }
+#talk { right: calc(-640px - 4vw); }
 
 #talk h2
 {
-    margin-top: -340px;
     margin-left: -40px;
+    margin-top: -340px;
 }
 
-
+#talk:hover h2 { animation-name: bounce-too-talk; }
