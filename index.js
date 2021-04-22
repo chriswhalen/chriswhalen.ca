@@ -76,6 +76,8 @@ let load =()=>
 
 window.addEventListener('load', load)
 
+window.addEventListener('scroll', ()=>{}, false)
+
 setInterval(()=>{ tilting = Math.max(0, tilting - 1) }, 64)
 
 zoom()

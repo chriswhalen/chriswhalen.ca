@@ -81,6 +81,7 @@ body
     font-size: 24pt;
     height: 100%;
     margin: 0;
+    overflow: hidden;
     position: relative;
     width: 100%;
 }
