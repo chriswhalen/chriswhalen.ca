@@ -43,13 +43,21 @@ let tilt =(event)=>
 {
     tilting++
 
-    let alpha = ((((event.alpha**2+event.gamma**2)**0.5) / 360) - 0.5) / document.body.style.zoom
-    let beta = (((event.beta**2+event.gamma**2)**0.5 ) / 360) / document.body.style.zoom
-    let gamma = ((event.gamma) / 90) / document.body.style.zoom
+    let alpha = (event.alpha + 180) % 360
+    let beta = event.beta + 180
+    let gamma = (event.gamma + 90) * 2
 
-    alpha = (alpha > 0) ? 1 - alpha : -1 - alpha
+    alpha = (alpha-180) / 180
+    beta = (beta-180) / 180
+    gamma = (gamma-180) / 180
 
-    transform(alpha*2, beta*2, gamma*2)
+    console.log(alpha, beta, gamma)
+
+    alpha /= document.body.style.zoom
+    beta /= document.body.style.zoom
+    gamma /= document.body.style.zoom
+
+    transform(alpha, beta, gamma)
 }
 
 let zoom =()=>
