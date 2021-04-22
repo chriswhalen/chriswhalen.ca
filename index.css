@@ -202,7 +202,7 @@ a:hover img
     filter: blur(0.5px);
     opacity: 0.92;
     position: absolute;
-    right: 12vw;
+    right: calc(8vw + 16vh);
     top: calc(-280px + 12%);
     z-index: 4;
 }
@@ -240,7 +240,7 @@ a:hover img
 {
     filter: blur(0.5px);
     position: absolute;
-    right: calc(320px + 32vh + 14%);
+    right: calc(320px + 36vh + 14%);
     top: calc(600px - 16vw + 32vh);
     z-index: 8;
 }

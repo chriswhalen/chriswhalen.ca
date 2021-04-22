@@ -48,14 +48,6 @@ let tilt =(event)=>
     let gamma = ((event.gamma) / 90) / document.body.style.zoom
 
     alpha = (alpha > 0) ? 1 - alpha : -1 - alpha
-    alpha *= (gamma > 0) ? 1 : -1
-
-    console.log({
-        'alpha': alpha,
-        'beta': beta,
-        'gamma': gamma,
-        'tilting': tilting,
-    })
 
     transform(alpha, beta, gamma)
 }
