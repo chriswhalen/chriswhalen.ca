@@ -1,3 +1,3 @@
-# [chriswhalen.ca](https://chriswhalen.ca/)
+# [chriswhalen.ca](https://chriswhalen.ca)
 
-### [github.com/chriswhalen/](https://github.com/chriswhalen/)
+### [github.com/chriswhalen](https://github.com/chriswhalen)
